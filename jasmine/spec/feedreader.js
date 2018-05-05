@@ -100,9 +100,7 @@ $(function() {
         });
 
         it('apos loadFeed deve existir ao menos um elemento .entry no contêiner .feed ', function() {
-            let feed = $('.feed');
-            let entry = $('.entry');
-            expect(feed.length).not.toBe(0);
+            let entry = $(".feed .entry");
             expect(entry.length).toBeGreaterThan(0);
         });
 
